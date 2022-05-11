@@ -5,7 +5,9 @@ import { create } from 'ipfs-http-client'
 import { ethers } from "ethers";
 import abi from "./Doc.json";
 import Navbar from '../src/components/Navbar'
-import { Container, Button, Divider, Box, Chip, Grid, TextField, Stack, Paper, Grow, Typography, Link, Skeleton, AlertTitle, Backdrop, CircularProgress, Card, CardActions, CardContent, CardMedia } from '@mui/material/';import SendIcon from '@mui/icons-material/Send';
+import { Container, Button, Divider, Box, Chip, Grid, TextField, Stack, Paper, Grow, Typography, Link, Skeleton, AlertTitle, Backdrop, CircularProgress, Card, CardActions, CardContent, CardMedia } from '@mui/material/';
+import AddIcon from '@mui/icons-material/Add';
+import SendIcon from '@mui/icons-material/Send';
 import { styled } from '@mui/material/styles';
 import Copyright from './components/copyright';
 import date from 'date-and-time';
@@ -35,7 +37,7 @@ function App() {
   // const handleClose = () => setModalOpen(false);
 
   const contractABI = abi.abi;
-  const contractAddress = "0x3a3749c23a8BFDAa56A4527FeF25d3C968959003";
+  const contractAddress = "0x0a527Eb5F7B4875d3aa264a92b9FD33F0c9D4D5a";
 
   useEffect(() => {
     checkifWalletisConnected();
@@ -434,4 +436,3 @@ function App() {
 }
 
 export default App;
-
